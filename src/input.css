@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
+
+.btn {
+    @apply shadow-md py-3 px-6 rounded-md transition duration-500 ease-out
+}
+.btn-blue {
+    @apply bg-soft-blue text-white
+}
+.btn-white {
+    @apply bg-custom-white text-very-dark-blue
+}
