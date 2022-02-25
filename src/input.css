@@ -13,3 +13,15 @@
 .btn-white {
     @apply bg-custom-white text-very-dark-blue
 }
+.features-btn {
+    @apply p-8 border-b border-grayish-blue hover:text-soft-red cursor-pointer
+}
+.active {
+    @apply border-b-4 border-soft-red
+}
+.tab {
+    @apply hidden justify-center items-center lg:px-32 lg:py-16 gap-5 relative lg:mb-32
+}
+.tab-active {
+    @apply flex
+}
