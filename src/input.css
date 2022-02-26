@@ -14,14 +14,25 @@
     @apply bg-custom-white text-very-dark-blue
 }
 .features-btn {
-    @apply p-8 border-b border-grayish-blue hover:text-soft-red cursor-pointer
+    @apply  py-4 lg:p-8 border-b border-grayish-blue hover:text-black lg:hover:text-soft-red cursor-pointer
 }
 .active {
-    @apply border-b-4 border-soft-red
+    @apply border-b-4 border-b-soft-red
 }
 .tab {
-    @apply hidden justify-center items-center lg:px-32 lg:py-16 gap-5 relative lg:mb-32
+    @apply hidden flex-col md:flex-row justify-center items-center lg:px-32 lg:py-16 gap-5 relative lg:mb-32
 }
 .tab-active {
     @apply flex
 }
+.faq-btn {
+    @apply  flex items-center justify-center py-4 cursor-pointer hover:text-soft-red   
+}
+.faq-hidden {
+    @apply hidden
+}
+.hidden-nav {
+    @apply hidden
+}
+.attribution { font-size: 14px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
