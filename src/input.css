@@ -14,7 +14,7 @@
     @apply bg-custom-white text-very-dark-blue
 }
 .features-btn {
-    @apply  py-4 lg:p-8 border-b border-grayish-blue hover:text-black lg:hover:text-soft-red cursor-pointer
+    @apply  py-4 md:p-8 border-b border-grayish-blue hover:text-black lg:hover:text-soft-red cursor-pointer
 }
 .active {
     @apply border-b-4 border-b-soft-red
@@ -33,6 +33,15 @@
 }
 .hidden-nav {
     @apply hidden
+}
+.error-block {
+    @apply block
+}
+.error-hidden {
+    @apply hidden
+}
+.error-border {
+    @apply bg-soft-red
 }
 .attribution { font-size: 14px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }

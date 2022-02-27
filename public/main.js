@@ -58,6 +58,25 @@ const icons = document.querySelectorAll('.icon');
 
 accordionBtn.forEach((accordion, index) => {
     accordion.addEventListener('click', () => {
-     content[index].classList.toggle('faq-hidden')
+     content[index].classList.toggle('faq-hidden');
     })
+});
+
+// form vailidation
+const form = document.getElementById('form');
+const email = document.getElementById('email');
+const validator = document.getElementById('vaildator');
+const errorIcon = document.getElementById('error-icon');
+const errorMessage = document.getElementById('error-message');
+const contactUs = document.getElementById('submit');
+submit.addEventListener('click', (e) => {
+    e.preventDefault()
+    const mailFormat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    if(email.value.match(mailFormat)){
+        console.log('success');
+    } else {
+        validator.classList.add('error-border');
+        errorIcon.classList.remove('error-hidden');
+        errorMessage.classList.remove('error-hidden');
+    }
 })
